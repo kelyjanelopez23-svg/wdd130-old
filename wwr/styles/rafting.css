@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* light blue background */
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
 }
 
 /* HEADER */
@@ -10,12 +10,11 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #0a3d62;
-    color: white;
     padding: 10px 20px;
 }
 
 .logo {
-    width: 70px; /* smaller logo */
+    width: 60px;
 }
 
 nav a {
@@ -33,27 +32,28 @@ nav a {
 
 .hero img {
     width: 100%;
-    max-height: 300px; /* control size */
+    max-height: 300px;
     object-fit: cover;
 }
 
 .hero h1 {
     position: absolute;
-    top: 40%;
+    bottom: 20px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     color: white;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
     padding: 10px 20px;
     border-radius: 5px;
 }
 
-/* SECTIONS */
+/* CONTENT SECTIONS */
 section {
     background-color: white;
     margin: 20px auto;
     padding: 20px;
-    width: 80%;
+    width: 90%;
+    max-width: 900px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -67,10 +67,22 @@ footer {
     background-color: #0a3d62;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* SOCIAL ICONS FIX */
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .social img {
-    width: 40px; /* FIX BIG ICONS */
-    margin: 10px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
