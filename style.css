@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | Kely Jane Lopez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Rafting Website</a>
+    </nav>
+</header>
+
+<main>
+    <h1>WDD 130 | Kely Jane Lopez</h1>
+
+    <img src="Kely.jpg" alt="Profile photo" class="profile">
+
+    <p>
+        I enjoy reading books and learning new skills. I am currently studying 
+        web development and excited to build my future career.
+    </p>
+
+    <h2>Philippines</h2>
+
+    <img src="philippines.jpg" alt="Philippines" class="country">
+
+    <p>
+        The Philippines is known for its beautiful beaches and friendly people.
+    </p>
+</main>
+
+<footer>
+    <p>© 2026 ⭐ Kely Jane Lopez ⭐ | Manila, Philippines</p>
+</footer>
+
+</body>
+</html>
