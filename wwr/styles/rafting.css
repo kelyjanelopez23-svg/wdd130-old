@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #74ebd5, #acb6e5);
+    min-height: 100vh;
 }
 
 /* HEADER */
@@ -13,8 +14,16 @@ header {
     padding: 10px 20px;
 }
 
+/* LOGO */
 .logo {
-    width: 60px;
+    width: 120px; 
+    height: auto;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -22,6 +31,11 @@ nav a {
     margin-left: 15px;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav a:hover {
+    color: #f1c40f;
+    text-decoration: underline;
 }
 
 /* HERO */
@@ -32,7 +46,7 @@ nav a {
 
 .hero img {
     width: 100%;
-    max-height: 300px;
+    height: 250px; /* FIXED HEIGHT */
     object-fit: cover;
 }
 
@@ -45,17 +59,23 @@ nav a {
     background: rgba(0,0,0,0.6);
     padding: 10px 20px;
     border-radius: 5px;
+    font-size: 1.8rem;
 }
 
 /* CONTENT SECTIONS */
 section {
     background-color: white;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 20px;
-    width: 90%;
+    width: 95%;
     max-width: 900px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
 }
 
 h2 {
@@ -74,7 +94,7 @@ footer p {
     margin: 5px 0;
 }
 
-/* SOCIAL ICONS FIX */
+/* SOCIAL ICONS */
 .social {
     display: flex;
     justify-content: center;
@@ -82,7 +102,32 @@ footer p {
 }
 
 .social img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    .hero img {
+        height: 180px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 1.2rem;
+        padding: 8px 15px;
+    }
 }
